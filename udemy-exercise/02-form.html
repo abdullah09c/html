@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="https://quran.com" method="post">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name">
+            <br>
+            <label for="second-name">Second Name</label>
+            <input type="text" name="second-name" id="second-name">
+            <br>
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass">
+            <br>
+            <label for="edu">Education</label>
+            <select name="edu" id="edu">
+                <option value="master">Master</option>
+                <option value="ms" selected>MS</option>
+                <option value="phd">PH.D</option>
+            </select>
+            <br>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="15" rows="5"></textarea>
+        </fieldset>
+        <input list="browsers"">
+        <datalist id="browsers">
+            <option value="edge">Edge</option>
+            <option value="chrome">Chrome</option>
+            <option value="safari">Safari</option>
+        </datalist>
+        <button type="button">Click Me</button>
+    </form>
+</body>
+</html>
